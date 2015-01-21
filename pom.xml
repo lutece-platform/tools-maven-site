@@ -28,7 +28,19 @@
         <developerConnection>scm:git:https://github.com/lutece-platform/tools-maven-site.git</developerConnection>
         <url>https://github.com/lutece-platform/tools-maven-site.git</url>
     </scm>
-    
+
+    <build>
+        <extensions>
+            <!-- Enabling the use of FTP -->
+            <!-- Should be declared to use the specific distributionManagement -->
+            <extension>
+                <groupId>org.apache.maven.wagon</groupId>
+                <artifactId>wagon-ftp</artifactId>
+                <version>2.6</version>
+            </extension>
+        </extensions>
+    </build>
+        
     <distributionManagement>
         <site>
             <id>lutece_ftp_site_maven</id>
