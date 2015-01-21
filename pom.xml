@@ -37,8 +37,8 @@
     </distributionManagement>
 
     <properties>
-        <jiraProjectName>LUTECE</jiraProjectName>
-        <jiraComponentId>10000</jiraComponentId>
+        <jiraProjectName>MAVENSITE</jiraProjectName>
+        <jiraComponentId>22057</jiraComponentId>
     </properties>
 	
 </project>
