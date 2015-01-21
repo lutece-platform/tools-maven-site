@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Lutece">
+
+    <bannerLeft>
+        <name>LUTECE</name>
+        <src>images/banner_left.png</src>
+        <href>http://dev.lutece.paris.fr/</href>
+    </bannerLeft>
+    
+    <bannerRight>
+        <name>LUTECE</name>
+        <src>images/banner_right.png</src>
+    </bannerRight>
+
+    <version />
+
+    <body>
+
+        <links>
+            <item name="FR" href="/fr/index.html" />
+        </links>
+                
+        <menu name="Lutece">
+            <item name="Introduction" href="index.html"/>
+            <item name="Read Me" href="readme.html"/>
+            <item name="Features" href="features.html"/>
+            <item name="Setup" href="install.html" />
+            <item name="License" href="license.html"/>            
+        </menu>
+
+        <menu name="Manuals">
+            <item name="Wiki" href="https://dev.lutece.paris.fr/confluence/"/>        
+            <item name="Development Standards" href="tech/standard_development.html" collapse="true">
+                <item name="Naming Conventions" href="tech/naming-conventions.html"/>
+                <item name="Coding Conventions" href="tech/coding-conventions.html"/>
+                <item name="Logging Rules" href="tech/logging-rules.html"/>
+                <item name="Documentation Rule" href="tech/documentation.html"/>
+                <item name="Unit Testing" href="tech/unit-testing.html"/>
+            </item>
+
+            <item name="Developer's Resources" href="tech/developers_resources.html"  collapse="true">
+                <item name="Architecture Overview" href="tech/architecture-overview.html"/>
+                <item name="Hello World" href="tech/code-sample-hello-world.html"/>
+                <item name="I18n" href="tech/i18n.html"/>
+                <item name="Core Services" href="tech/core-services.html"/>
+                <item name="Data Access" href="tech/data-access.html"/>
+                <item name="Site messages" href="tech/howto-use-site-message.html" />
+                <item name="Dates management" href="tech/dates-management.html"/>
+                <item name="Plugins" href="tech/howto-create-plugins.html" collapse="true">
+                    <item name="Portlets" href="tech/howto-create-portlets.html"/>
+                    <item name="Applications" href="tech/howto-create-xpages.html"/>
+                    <item name="Admin Features" href="tech/howto-create-admin-features.html"/>
+                    <item name="LinkServices" href="tech/howto-create-linkservices.html"/>
+                    <item name="ContentServices" href="tech/howto-create-contentservices.html"/>
+                    <item name="PageIncludeServices" href="tech/howto-create-pageincludeservices.html"/>
+                    <item name="ResourceServices" href="tech/howto-resource-service.html"/>
+                    <!--    <item name="Forms" href="how-to-formengine-create-module.html" collapse="true">
+                    <item name="Jaxb" href="how-to-formengine-jaxb.html"/>
+                    </item>-->
+                </item>		
+            </item>
+            <!--<item name="Security" href="security.html" collapse="true">
+                  <item name="Attributes" href="attributes.html"/>
+                  <item name="Schema" href="schema.html"/>
+            </item>-->
+        </menu>
+
+        <menu name="Components">
+            <item name="Components List" href="available-plugins.html"/>
+            <item name="Lutece plugin for Maven2" href="/plugins/maven-lutece-plugin/index.html" />
+        </menu>
+		
+        <menu name="Downloads" inherit="bottom">
+            <item name="Released versions" href="/stable_builds/site-demo" />
+            <item name="Nightly builds" href="/nightly_builds/site-demo" />
+        </menu>
+		
+    </body>
+</project>

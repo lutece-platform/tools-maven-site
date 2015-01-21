@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <document>
+   <properties>
+    <title>
+      Lutèce : Guide de développement : Les servlets et filtres
+    </title>
+   </properties>
+  <body>
+    <section name="Créer des servlets et des filtres">
+        <subsection name="Introduction">
+            <p>
+                Les servlets et les filtres sont habituellement déclarés dans
+                le fichier <code>WEB-INF/web.xml</code> or ce fichier est unique et
+                ne peut en aucun cas être modifié par les plugins. 
+            </p>
+            <p>
+                Afin d'offrir aux plugins ce type de composants, Lutece propose de 
+                créer des servlets et des filtres de plugin. Ceux-ci se déclarent dans 
+                le fichier xml.
+            </p>
+        </subsection>
+        
+        <subsection name="Classes Java">
+            <p>
+               Les classes Java des servlets ou des filtres sont à écrire exactement de 
+                la même manière que des servlets ou filtres standards. Seule leur déclaration
+                est différente.
+            </p>
+            <p>
+                Des classes existantes, provenant par exemple de produits externes, peuvent être
+                packagées sous forme de servlet ou filtre de plugin (exemple : le filtre de réécriture
+                d'url utilisé par le plugin urlrewriter). 
+            </p>
+        </subsection>
+        <subsection name="Déclaration des servlets et des filtres">
+            <p>
+                Les servlets et filtres sont à déclarer dans le fichier XML du plugin
+                de la manière suivante :
+            </p>
+               <p>
+                  <div class="source">
+     <pre>
+    <!-- servlets -->
+    &lt;servlets&gt;
+        
+        &lt;servlet&gt;
+            &lt;servlet-name&gt;myServlet1&lt;/servlet-name&gt;
+            &lt;url-pattern&gt;<b>/servlet/plugins/myplugin/</b>myServlet1&lt;/url-pattern&gt;
+            &lt;servlet-class&gt;fr.paris.lutece.plugins.myplugin.web.MyFirstServlet&lt;/servlet-class&gt;
+        &lt;/servlet&gt;
+        
+        &lt;servlet&gt;
+            &lt;servlet-name&gt;myServlet2&lt;/servlet-name&gt;
+            &lt;url-pattern&gt;<b>/servlet/plugins/</b>myplugin/myServlet2&lt;/url-pattern&gt;
+            &lt;servlet-class&gt;fr.paris.lutece.plugins.myplugin.web.MySecondServlet&lt;/servlet-class&gt;
+        &lt;/servlet&gt;
+
+    &lt;/servlets&gt;
+    
+    &lt;!-- filters --&gt;
+    &lt;filters&gt;
+        &lt;filter&gt;
+            &lt;filter-name&gt;myFilter&lt;/filter-name&gt;
+            &lt;url-pattern&gt;/*&lt;/url-pattern&gt;
+            &lt;filter-class&gt;fr.paris.lutece.plugins.myplugin.web.MyFilter&lt;/filter-class&gt;
+
+            &lt;init-param&gt;
+                &lt;param-name&gt;param1&lt;/param-name&gt;
+                &lt;param-value&gt;value of param1&lt;/param-value&gt;
+            &lt;/init-param&gt;
+
+        &lt;/filter&gt;
+    &lt;/filters&gt;
+     </pre>
+</div>
+               </p>
+               <p>
+                   NB : Les URL des servlets doivent impérativement être basées sous
+                   <code>/servlet/plugins/<i>myplugin</i></code> 
+               </p>
+          </subsection>
+         </section>
+    </body>
+</document>
+
+

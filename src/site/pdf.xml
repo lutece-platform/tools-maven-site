@@ -1,0 +1,43 @@
+<document xmlns="http://maven.apache.org/DOCUMENT/1.0.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/DOCUMENT/1.0.1 http://maven.apache.org/xsd/document-1.0.1.xsd"
+  outputName="site">
+
+  <meta>
+    <title>Lutèce</title>
+    <author>Mairie de Paris</author>
+  </meta>
+
+		<toc name="Documentation utilisateur">
+    		<item name="1. Lut&#232;ce V2 : pr&#233;sentation g&#233;n&#233;rale" ref="user/lutece_v2_overview.html" >
+				<!--<item name="Description de Lut&#232;ce" ref="user/lutece_v2_overview.html#a1.1_Description_de_Lutece" />
+				<item name="Site public / Interface dadministration" ref="user/lutece_v2_overview.html#a1.2_Site_public__Interface_dadministration" >
+					<item name="Site Public" ref="user/lutece_v2_overview.html#a1.2.1_Le_site_public" />
+					<item name="Interface d'administration" ref="user/lutece_v2_overview.html#a1.2.2_Linterface_dadministration" />
+				</item>
+				<item name="Notions et concepts importants" ref="user/lutece_v2_overview.html#a1.3_Notions_et_concepts_importants" />-->
+			</item>
+		
+			<item name="2. Pages et Contenus" ref="user/pages_and_content.html" >
+				<!--<item name="Administration du site" ref="user/pages_and_content.html#a2.1_Administration_du_site" />
+				<item name="Contenus - typologie, production et publication" ref="user/pages_and_content.html#a2.2_Les_contenus_-_typologie_production_et_publication" >
+					<item name="Pr&#233;sentation g&#233;n&#233;rale" ref="user/pages_and_content.html#a2.2.1._Présentation_générale" />
+					<item name="Zoom sur Document" ref="user/pages_and_content.html#a2.2.2._Zoom_sur_le_contenu_Document" />
+				</item>-->
+			</item>
+		
+			<item name="3. Gestion des utilisateurs" ref="user/user_management.html" >
+				<!--<item name="Du site public" ref="user/user_management.html#a3.2_Gestion_des_utilisateurs_du_site_public" />
+				<item name="De l'interface d'administration" ref="user/user_management.html#a3.1_Gestion_des_utilisateurs_de_linterface_dadministration" />-->
+			</item>		
+			<item name="4. Glossaire" ref="user/glossary.html" />		
+		</toc>
+
+  <cover>
+    <coverTitle>${project.name}</coverTitle>
+    <coverSubTitle>v. ${project.version}</coverSubTitle>
+    <coverType>Guide utilisateur</coverType>
+    <projectName>${project.name}</projectName>
+    <companyName>Mairie de Paris</companyName>
+  </cover>
+</document>

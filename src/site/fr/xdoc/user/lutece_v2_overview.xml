@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+	<properties>
+		<title>Guide de démarrage rapide - Lutèce V2</title>
+	</properties>
+	<body>
+	
+		<section name="1. LUTECE V2 : PRESENTATION GENERALE">
+			<p>
+				Ce support "<em>Guide de démarrage rapide - Lutèce V2</em>" permet de découvrir les fonctionnalités les plus courantes de Lutèce V2, dans les versions V2.x.
+			</p>
+			<p>
+				Lorsqu'elles sont disponibles, des <strong>documentations
+plus détaillées</strong> sont accessibles par lien dans la
+description des fonctionnalités.
+			</p>
+			<p>
+				Avant d'utiliser ce support, <strong>l'installation de lutèce et de ses modules</strong> doit avoir été finalisée par votre administrateur.
+>>> <strong>En savoir plus</strong> : <a href="Lien">Informations concernant l'installation de Lutèce (Windows et Linux)</a>
+			</p>
+		
+    	<table>
+    	<tr>
+    	<th>
+      <center>
+			<img src="images/information.gif" alt="" />
+      </center>
+      </th>
+      <th>
+
+				<p>
+        <center>
+        <strong>Infos pratiques pour mieux utiliser ce document</strong>
+        </center>
+        </p>
+				<p>
+A tout moment, pour accéder directement au contenu de votre choix, séléctionner dans le navigateur "<em>Edition > Rechercher dans la page</em>". 
+La saisie d'un mot clé permet d'accéder directement aux chapitres comprenant ce mot. 
+      </p>
+      
+			</th>
+      </tr>
+      </table>
+			
+			<subsection name="1.1 Description de Lutece">
+			 <p>
+			   Créé en 2001 par la Mairie de Paris, Lutèce est une solution de gestion de contenus, basée sur des standards techniques reconnus du monde du libre. 
+       </p>
+       <p>
+       Doté d'une interface intuitive qui permet de simplifier la création de portails internet, intranet et extranet, l'outil a pour vocation :
+       </p>
+       <p>
+          <ul>
+              <li>de fournir les briques principales de création de votre site </li>
+              <li>de faciliter la gestion éditoriale de vos contenus</li>
+              <li>de préserver votre identité visuelle</li>
+              <li>d'offrir une interface d’administration simple</li>
+           </ul>
+       </p>
+       <p>
+       Articulé autour d’un socle commun et de modules fonctionnels (appelés "plugins"), Lutèce permet la mise en place des fonctionnalités suivantes :
+       </p>
+       <p>
+          <ul>
+              <li>Création d'une arborescence sur mesure d'un site </li>
+              <li>Insertion dans les pages de types de contenus classiques (texte, fichiers, images, vidéos, lettre d'informations...) ou plus interactifs (formulaires, quizz, sondages, fil RSS...)</li>
+              <li>Pour certains contenus ("Documents"), processus de mise à jour selon un circuit de validation (workflow) qui peut s'adapter à votre organisation interne (Rédaction, Correction, Validation, Publication)</li>
+              <li>Accès facilité à la mise à jour des contenus (navigation via l'ergonomie du site public, recherche en texte intégral dans les documents, accès par le plan du site dynamique, accès par saisie du numéro/identifiant de la page...) </li>
+              <li>Groupes de travail collaboratif</li>
+              <li>...</li>
+           </ul>
+       </p>
+			</subsection>
+			
+			<subsection name="1.2 Site public / Interface d'administration">
+				<p>
+				Pour bien commencer la lecture de ce support, il est important de bien distinguer :
+				</p>
+				<p>
+          <ul>
+              <li><strong>L'interface d'administration</strong> Lutèce V2, destinée à la gestion du site (création de l'arborescence, intégration des contenus, gestions des droits d'accès...)</li>
+              <li><strong>Le site public</strong>, destiné aux internautes. Ce site public est conçu et mis à jour à l'aide de <strong>l'interface d'administration</strong> Lutèce V2</li>
+           </ul>
+       </p>
+       <p>
+       En conséquence, 2 types d'utilisateurs doivent être distingués : 
+       </p>
+       <p>
+          <ul>
+              <li>Les <strong>utilisateurs de l'interface d'administration Lutèce V2</strong>, dénommés dans ce support "<em><strong>Gestionnaires Lutèce</strong></em>"
+                  <ul>
+                      <li>A noter que ces "<em><strong>Gestionnaires Lutèce</strong></em>" peuvent disposer de droits d'accès différents aux fonctionnalités de l'interface (Administration, rédaction, validation, publication...)</li>
+                   </ul>
+               </li>
+              <li>Les <strong>utilisateurs ou visiteurs du site public</strong>, dénommé dans ce support "<em><strong>Internautes</strong></em>"
+                  <ul>
+                      <li>A noter que ces "<em><strong>Internautes</strong></em>" peuvent disposer de code d'accès leur permettant de visualiser des contenus réservés du site public.</li>
+                   </ul>
+               </li>
+           </ul>
+       </p>
+       <p>
+         <center>
+            <img alt="Site Public Interface d'admin" src="images/public_site_interface_admin.gif"/>
+  			 </center>
+			 </p>
+        <a name="1.2.1_Le_site_public"/>
+				<h4>1.2.1  Le site public</h4>
+				<p>
+				  Le site public est le résultat, visualisé par les internautes, du travail de mise à jour des gestionnaires de Lutèce.
+				</p>
+				<p>
+          Il est donc le reflet de ce qui a été saisi dans l'interface d'administration.
+				</p>
+				<p>
+         <centre>
+				      <img alt="Site Public Lutece Accueil" src="images/public_site/public_site_accueil.gif"/>
+          </centre>
+			  </p>
+			  <p>
+          <ul>
+             <li>Dans l'écran ci-dessus, les pages de premier niveau du site sont regroupées dans la barre de navigation (ici les onglets)</li>
+             <li>Le clic sur un onglet permet d'accèder au contenu de la page. Dans cette page, la sous-arborescence peut apparaitre, par exemple dans la navigation gauche (voir copie d'écran ci-dessous), ou encore par un menu déroulant</li>
+             <li>Un chemin de navigation dynamique est présent sur chacune des pages visitées</li>
+             <li>La navigation dans l'arborescence du site peut également se faire à partir de liens placés directement dans les pages</li>
+             <li>Le plan du site, généré dynamiquement, permet de visualiser l'arborescence globale du site, et d'accéder directement aux pages de son choix </li>
+          </ul>
+        </p>
+				<p>
+				A noter que chaque site public peut disposer de sa propre charte graphique. 
+				<p>
+         <centre>
+				    <img alt="site menu Bandeau Supperieur Gauche" src="images/public_site/site_menu_top_left.gif"/>
+          </centre>
+			  </p>
+				</p>
+				<a name="1.2.2_Linterface_dadministration"/>
+				<h4>1.2.2  L'interface d'administration</h4>
+				<p>
+				L'interface d'administration a été conçue pour être simple à utiliser, et n'exige pas de compétences techniques particulières.
+				</p>
+				<p>
+        Un ensemble d'interfaces graphiques assiste le gestionnaire dans la création des pages, le choix des rubriques, la saisie ou la publication de contenus, le choix du style de présentation.
+				</p>
+				<p>
+				L'interface d'administration Lutèce V2 est livrée par défaut avec les comptes gestionnaires ci-dessous pré-paramétrés :
+				</p>
+				<p>
+          <ul>
+             <li>Un administrateur technique</li>
+             <li>Un administrateur fonctionnel</li>
+             <li>Un webmaster</li>
+             <li>Un assistant de publication / Rédacteur</li>
+          </ul>
+        </p>
+        <p>
+        L'administrateur technique peut à tout moment modifier les droits des gestionnaires pour s'adapter à vos spécificités internes. 
+        </p>
+        
+        <h5>S'identifier à l'interface d'administration</h5>
+        
+        <p>
+        L'accès à l'écran d'identification de l'interface d'administration se fait en saisissant l'adresse suivante dans le navigateur Internet (Firefox, Internet Explorer, Safari, ...) : 
+        </p>
+        <p>
+        L'adresse d'accès (nom de domaine + nom du site) est suivie de /jsp/admin/AdminLogin.jsp
+        </p>
+        <p>
+          <center>
+            Ex : http://nom_de_domaine/nom_du_site<strong>/jsp/admin/AdminLogin.jsp</strong>
+          </center>
+        </p>
+        <p>
+        L'écran ci-dessous permet donc de s'identifier à Lutèce. Le webmaster ou l'administrateur du site sont responsables de l'attribution des codes d'accès et de l'initialisation des mots de passe.
+        </p>
+        <p>
+          <center>
+            <img alt="Admin Identifiant mot de passe" src="images/admin/admin_identification_password.gif"/>
+         </center>
+        </p>
+        <p>
+        <strong>Pour s'identifier à l'interface d'administration Lutèce :</strong> 
+        </p>
+        <p>
+        1) Saisir l'identifiant (Champs "<strong>Code d'accès</strong>")
+        </p>
+        <p>
+        2) Saisir le mot de passe (Champs "<strong>Mot de passe</strong>", entre 4 et 10 caractères, sans espaces ni caractères accentués ou spéciaux)
+        </p>
+        <p>
+        3) Valider la saisie pour s'identifier (Bouton "<strong>Se connecter</strong>")
+        </p>
+        <p>
+        Si 3 tentatives d'authentification échouent (<em>en général à cause d'une erreur dans la saisie de l'identifiant ou du mot de passe</em>), l'accès à l'interface est bloqué temporairement. 
+        </p>
+        <p>
+        <strong>Pour se déconnecter de l'interface d'administration  :</strong> 
+        </p>
+        <p>
+          <ul>
+             <li>A tout moment, il est possible de se déconnecter de l'interface d'administration. (Lien "Deconnexion" en haut à droite)</li>
+             <li>Il est alors indispensable de s'authentifier à nouveau pour accéder à l'interface d'administration</li>    
+          </ul>
+        </p>
+        <p>
+          <strong>Déconnexion automatique de l'interface d'administration</strong>
+        </p>
+        <p>
+          <ul>
+             <li>La non utilisation de l'interface d'administration (après une durée paramétrée par l'administrateur) entraine une déconnexion automatique.</li>
+             <li>Il est alors indispensable de s'authentifier à nouveau pour accéder à l'interface d'administration.</li>
+          </ul>
+        </p>
+        
+        <table>
+        	<tr>
+        	<th>
+          <center>
+    			<img src="images/warning.gif" alt="" />
+          </center>
+          </th>
+          <th>
+    
+    				<p>
+            <center>
+            <strong>Important</strong>
+            </center>
+            </p>
+    				<p>
+    Toute déconnexion entraine la perte des informations saisies et non enregistrées.
+          </p>
+          
+    			</th>
+          </tr>
+          </table>
+
+        <p>
+        <strong>Changement  de mot de passe</strong>
+        </p>
+        <p>
+        Chaque gestionnaire Lutèce a la possibilité de changer le mot de passe qui lui a été attribué. Par contre, l'identifiant (code d'accès) ne peut pas être modifié par le gestionnaire lui-même. Seul un gestionnaire ayant le droit de modifier les comptes utilisateurs peut changer un identifiant.  
+        </p>
+        <p>
+          <ul>
+             <li>Pour changer de mot de passe :
+                <ul>
+                   <li>Cliquer sur "Modifier son mot de passe" dans la page d'accueil de l'interface d'administration. (Zone à droite de l'écran)</li>
+                   <li>L'écran qui apparait propose d'effectuer la saisie ci-dessous (Tous les champs sont obligatoires) : 
+                        <ul>
+                           <li>Saisir son mot de passe actuel (Champs "<strong>Mot de passe actuel</strong>")</li>
+                           <li>Saisir son nouveau mot de passe (Champs "<strong>Nouveau mot de passe</strong>")</li>
+                           <li>Saisir à nouveau son nouveau mot de passe (Champs "<strong>Confirmation</strong>")</li>
+                           <li>La validation de cette saisie (via le bouton <strong>OK</strong>) valide le changement de mot de passe</li>
+                        </ul>     
+                    </li>
+                </ul>     
+             </li>
+          </ul>     
+        </p>
+        <p>
+        <strong>Accueil de l'interface d'administration</strong>
+        </p>
+        <p>
+        Après l'identification, l'écran ci-dessous apparait et permet d'accéder aux fonctionnalités autorisées de gestion du site. 
+        </p>
+        <p>
+          <center>
+            <img alt="Admin Accueil" src="images/admin/admin_home.gif"/>
+         </center>
+        </p>
+        <p>
+        Chaque profil <strong>Gestionnaire</strong> Lutèce peut disposer de droits d'accès différents. Ainsi, les fonctionnalités qui apparaissent peuvent différer d'un gestionnaire à l'autre. Ces droits d'accès sont gérés par l'administrateur du site. (Voir chapitre de ce support "<em><a href="user_management.html#a3.1_Gestion_des_utilisateurs_de_linterface_dadministration">Gestion des utilisateurs > Interface d'administration</a></em>")
+        </p>
+         <p>
+          <center>
+            <img alt="Admin Accueil menu deroule" src="images/admin/admin_home_new.gif"/>
+          </center>
+        </p>
+        <p>
+        Il est possible d'accèder aux fonctionnalités de l'interface d'administration de deux façons : 
+        </p>
+        <p>
+          <ul>
+            <li><strong>via le bandeau supérieur</strong>, qui permet d'accéder aux fonctionnalités autorisées
+              <ul>
+                <li>un menu déroulant apparait dès que le curseur se positionne sur l'un des choix de ce bandeau supérieur</li>
+              </ul>     
+            </li>
+            <li><strong>via la partie centrale de l'écran</strong>, qui déploie l'ensemble de ces fonctionnalités</li>
+          </ul>     
+        </p>
+        <p>
+        <em>Depuis une fonctionnalité, pour retrouver cet écran, cliquez sur l'onglet "Accueil"</em>
+        </p>
+      </subsection>
+			
+			<subsection name="1.3 Notions et concepts importants">
+			   <p>
+			   Ci-dessous une première présentation des notions et concepts importants présentés dans ce support :
+			   </p>
+				<a name="1.3.1_Page_d'accueil_Pages_Arborescence"/>
+				<h4>1.3.1 Page d'accueil  / Pages / Arborescence</h4>
+				
+				<p>
+				Un site conçu à partir de Lutece se présente sous la forme d'une arborescence dynamique de pages, dont la racine est la page d'accueil
+				</p>
+				<p>
+				  <center>
+				    <img alt="Arbo Accueil Niveaux" src="images/public_site/public_site_level_tree.gif"/>
+				  </center>
+				</p>
+				<p>
+				Le schéma ci-dessus présente un exemple d'arborescence de site
+				</p>
+				 <p>
+          <ul>
+              <li><strong>La page d'accueil (niveau 0 ou racine du site)</strong> qui est la porte d'entrée du site
+                  <ul>
+                      <li>Elle permet un accès intuitif à tous les types de contenus disponibles. </li>
+                      <li>C'est à partir de cette page d'accueil qu'est créée l'arborescence du site.</li>
+                   </ul>
+               </li>
+              <li><strong>Les pages de niveau 1</strong> sont les pages principales du site qui permettent d'organiser les contenus selon des thématiques, ce qui rend la navigation aisée
+                  <ul>
+                      <li>Ces pages de niveau 1 apparaissent dans le bandeau supérieur du site public</li>
+                      <li>Chaque page de niveau 1 peut disposer d'une sous-arborescence, mais celle-ci n'est pas obligatoire.</li>
+                   </ul>
+               </li>
+               <li><strong>Les pages de niveau 2</strong> permettent d'associer une sous-arborescence aux pages de niveau 1</li>
+               <li>Associer une sous-arborescence à un niveau 1 n'est pas obligatoire, si le contenu ne le justifie pas. Certaines pages de niveau 1 n'ont donc parfois pas de sous-arborescence.</li>
+           </ul>
+       </p>
+       <p>
+       A noter que les libellés des pages sont totalement administrables par les gestionnaires du site. (<em><a href="pages_and_content.html#a2.1_Administration_du_site">Voir fonctionnalités Site > Administration du site</a></em>)
+       </p>
+				<p>
+				2 autres notions liées aux pages apparaissent dans l'interface d'administration : 
+				</p>
+				 <p>
+          <ul>
+              <li>Les <strong>pages mères</strong></li>
+              <li>Les <strong>pages filles</strong></li>
+           </ul>
+       </p>
+				<p>
+				En reprenant l'illustration ci-dessus, il est plus facile d'appréhender ces notions : 
+				</p>
+				 <p>
+          <ul>
+              <li>La page d'accueil (de <strong>niveau 0</strong>) a comme <strong>pages filles</strong>, les pages de l'arborescence de <strong>niveau 1</strong> : 
+                  <ul>
+                      <li>Les <strong>pages filles</strong> de la page d'accueil sont donc les pages A, B, C</li>
+                      <li>Inversement, les pages filles A, B, C ont comme <strong>page mère</strong>, la page d'accueil.</li>
+                   </ul>
+               </li>
+              <li>Au niveau 2, les pages A1, A2, A3 ont comme <strong>page mère</strong> la page A</li>
+              <li>Les pages A1, A2, A3, sont donc les <strong>pages filles</strong> de la page A (qui est leur <strong>page mère</strong>)</li>
+           </ul>
+       </p>
+       <p>
+       Nous verrons qu'il est possible de déplacer facilement une page fille dans l'arborescence en changeant sa page mère. (<em>Voir <a href="pages_and_content.html#a2.1.4_Zoom_sur_l'administration_des_pages_du_site">chapitre 2.1.4</a> ci-dessous : champs "id de la page mère" dans  "Propriétés de la page"</em>)
+       </p>
+       
+				<a name="1.3.2_Principe_de_séparation_entre_le_contenu_et_sa_présentation"/>
+				<h4>1.3.2 Principe de séparation entre le contenu et sa présentation</h4>
+			   <p>
+			   Les contenus sont produits par les gestionnaires sans indication de leur mise en page future (principe de la séparation entre contenu et mise en forme).
+         </p>
+         <p>
+         a séparation du contenu et de sa présentation comporte de nombreux avantages : 
+         </p>
+          <p>
+          <ul>
+              <li>Un de ces avantages est de permettre la réutilisation d'une présentation pour d'autres contenus</li>
+              <li>Cela permet aussi de modifier très facilement une présentation, sans avoir besoin de modifier tous les contenus déjà publiés</li>
+              <li>Cela diminue aussi de façon importante le volume des pages html, et accélère donc leur chargement </li>
+           </ul>
+       </p>
+         
+				<a name="1.3.3_Administration_du_site"/>
+				<h4>1.3.3 Administration du site </h4>
+				<p>
+				L'administration du site (<em>Accès via le menu "Site > Administration du site"</em>) permet : 
+				</p>
+				 <p>
+          <ul>
+              <li>de concevoir l'arborescence des pages du site public</li>
+              <li>d'insérer au sein de chacune des pages, des blocs de contenus (appellés Rubriques) et leurs contenus associés (texte, images, liens...)</li>
+              <li>de choisir (et de modifier) :
+                  <ul>
+                      <li>le positionnement (ordre d'affichage) des rubriques les unes par rapport aux autres</li>
+                      <li>le placement des rubriques dans l'une des colonnes disponibles sur la page</li>
+                   </ul>
+               </li>
+               <li>de modifier ces blocs / rubriques et leurs contenus</li>
+           </ul>
+       </p>
+       <p>
+        <em><a  href="pages_and_content.html#a2.1_Administration_du_site">Cette fonctionnalité principale de Lutèce est décrite au chapitre 2</a></em>
+       </p>
+       
+				<a name="1.3.4_Rubriques"/>
+				<h4>1.3.4 Rubriques </h4>
+				 <p>
+          <ul>
+              <li>L'information présentée dans chacune des pages du site s'organise à l'intérieur de blocs "Rubriques".</li>
+              <li>Ces rubriques constituent des blocs de contenus qui vont pouvoir être placées simplement à l'intérieur d'une page par le gestionnaire, au moment de la conception et de la mise à jour des pages.</li>
+              <li>Les types de rubriques disponibles apparaissent dans le menu déroulant ci-dessous.
+                <center>
+                  <img src="images/admin/admin_site_rubrique_list.gif" alt="Types Rubriques"/>
+                </center>
+              </li>
+              <li>Ces types de rubriques seront présentés sommairement dans ce support au <a href="pages_and_content.html#a2.2_Les_contenus_:_typologie_production_et_publication">chapitre 2.2</a></li>
+              <li>Une présentation détaillée apparait dans ce support au <a href="pages_and_content.html#a2.2.2._Zoom_sur_le_contenu_Document">chapitre 2.2.2</a> pour le contenu "Documents" qui bénéficie de caractéristiques avancées de gestion de contenus. Ce contenu apparaîtra dans la rubrique de type "<em>Liste de documents</em>"</li>
+              <li>Des modèles de mise en page de contenu sont définis pour chaque type de rubrique et peuvent être complétés ou modifiés au fur et à mesure des besoins</li>
+           </ul>
+       </p>
+				<a name="1.3.5_Documents"/>
+				<h4>1.3.5 Documents</h4>
+				 <p>
+          <ul>
+              <li>Un contenu de type "document" peut disposer d'un circuit de validation des contenus (workflow) comprenant plusieurs étapes paramétrables (Production, Validation, Publication)
+                  <ul>
+                      <li><em>Le <a href="pages_and_content.html#2.2.2._Zoom_sur_le_contenu_Document">chapitre 2.2.2 "Zoom sur Documents"</a> présente de façon détaillée la production et la publication des contenus de type "documents". </em></li>
+                   </ul>
+               </li>
+           </ul>
+       </p>
+				<a name="1.3.6_Gestion_des_utilisateurs"/>
+				<h4>1.3.6 Gestion des utilisateurs</h4>
+				 <p>
+          <ul>
+              <li>La gestion de 2 types d'utilisateurs doit être distinguée :
+                  <ul>
+                      <li>La gestion des utilisateurs "gestionnaires" de l'interface d'administration</li>
+                      <li>La gestion des utilisateurs "internautes" du site public</li>
+                   </ul>
+               </li>
+              <li>Cette gestion permet de donner des droits d'accès spécifiques à chacun de ces utilisateurs. Par exemple :
+                  <ul>
+                      <li><em>Pour un gestionnaire : la sélection des fonctionnalités qui lui sont autorisées</em></li>
+                      <li><em>Pour un internaute : les pages réservées auxquelles il aura accès</em></li>
+                   </ul>
+               </li>
+               <li>Le chapitre 3 précise les fonctionnalités principales de gestion de ces 2 types d'utilisateurs</li>
+           </ul>
+       </p>
+       
+				<a name="1.3.7 Passage_de_l'interface_d'administration_au_site_public"/>
+				<h4>1.3.7 Passage de l'interface d'administration au site public</h4>
+				<p>
+				L'onglet "Site" de l'interface d'administration permet de basculer vers le site public.  
+				</p>
+				<p>
+				L'écran ci-dessous illustre ces 2 accès. 
+				</p>
+				<p>
+				<center>
+				  <img alt="SitePublic_interfaceAdmin_LienSite" src="images/admin/admin_link_public_site.gif"/>
+				</center>
+				</p>
+				<p>
+				 <strong>Un glossaire détaillé est disponible à la fin de ce support. </strong>
+				</p>
+			</subsection>
+		</section>
+		
+	</body>
+</document>

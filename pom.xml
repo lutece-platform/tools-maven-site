@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">    
+    <parent>
+        <artifactId>lutece-global-pom</artifactId>
+        <groupId>fr.paris.lutece.tools</groupId>
+        <version>3.0</version>
+    </parent>
+    
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>fr.paris.lutece</groupId>
+    <artifactId>maven-site</artifactId>
+    <packaging>pom</packaging>
+    <version>5.0.0</version>
+    <name>Lutece Maven Site</name>
+    <url>http://dev.lutece.paris.fr/</url> 
+
+	
+    <repositories>
+        <repository>
+            <id>lutece</id>
+            <name>luteceRepository</name>
+            <url>http://dev.lutece.paris.fr/maven_repository</url>
+            <layout>default</layout>
+        </repository>
+    </repositories>
+    
+    <scm>
+        <connection>scm:git:https://github.com/lutece-platform/tools-maven-site.git</connection>
+        <developerConnection>scm:git:https://github.com/lutece-platform/tools-maven-site.git</developerConnection>
+        <url>https://github.com/lutece-platform/tools-maven-site.git</url>
+    </scm>
+    
+    <distributionManagement>
+        <site>
+            <id>lutece_ftp_site_maven</id>
+            <url>ftp://site-deploy.dev.lutece.paris.fr/site</url>
+        </site>
+    </distributionManagement>
+
+    <properties>
+        <jiraProjectName>LUTECE</jiraProjectName>
+        <jiraComponentId>10000</jiraComponentId>
+    </properties>
+	
+</project>
