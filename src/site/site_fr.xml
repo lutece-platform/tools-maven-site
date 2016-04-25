@@ -98,8 +98,8 @@
         </menu>
 	
         <menu name="Téléchargements" inherit="bottom" >
-            <item name="Versions stables" href="../stable_builds/site-demo"/>
-            <item name="Nightly builds" href="../nightly_builds/site-demo" />
+            <item name="Versions stables" href="../stable_builds/"/>
+            <item name="Nightly builds" href="../nightly_builds/" />
         </menu>
 
     </body>

@@ -71,8 +71,8 @@
         </menu>
 		
         <menu name="Downloads" inherit="bottom">
-            <item name="Released versions" href="/stable_builds/site-demo" />
-            <item name="Nightly builds" href="/nightly_builds/site-demo" />
+            <item name="Released versions" href="/stable_builds/" />
+            <item name="Nightly builds" href="/nightly_builds/" />
         </menu>
 		
     </body>
