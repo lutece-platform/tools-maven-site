@@ -13,6 +13,8 @@
         <src>http://dev.lutece.paris.fr/images/banner_right.png</src>
     </bannerRight>
 
+    <publishDate format="dd MMMM yyyy" position="left" />
+    <version position="none"/>
     
     <body>
         <links>

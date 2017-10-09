@@ -1,0 +1,11 @@
+/*
+ * The fluido skin uses "position: absolute; z-index: 10000" for the top right
+ * github ribbon. We put the links in front of the ribbon because the ribbon is
+ * a square transparent image and the links are in the transparent part
+ * (bottom left) of the image.
+ * This way, they become clickable whithout hiding the image.
+*/
+#breadcrumbs li.pull-right {
+    position: relative;
+    z-index: 10001;
+}
